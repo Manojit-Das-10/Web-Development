@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h2>Job Application</h2></header>
+    <br/>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
+    <br/>
+    <br/>
+    <label for="email">Email Id</label>
+    <input type="email" name="email" id="email">
+    <br/>
+    <br/>
+    <label for="phone">Phone No.</label>
+    <input type="tel" name="phone" id="phone">
+    <br/>
+    <br/>
+    <label for="resume">Resume</label>
+    <input type="file" name="resume" id="resume">
+    <br/>
+    <br/>
+    <label for="counter">Experience (in years):</label>
+    <input type="number" name="counter" id="counter" min="0" max="50">
+    <br/>
+    <br/>
+    <fieldset>
+        <legend>skills:</legend>
+        <input type="checkbox" name="html" id="html">
+        <label for="html">HTML</label>
+        <br/>
+        <input type="checkbox" name="css" id="css">
+        <label for="css">CSS</label>
+        <br/>
+        <input type="checkbox" name="js" id="js">
+        <label for="js">JavaScript</label>
+    </fieldset>
+    <br/>
+    <label for="hs">Higher Education</label>
+    <select name="hs" id="hs">
+        <option value="High School">High School</option>
+        <option value="Primary school">Primary school</option>
+        <option value="Others">Others</option>
+    </select>
+    <br/>
+    <br/>
+    <fieldset>
+        <!-- <label for="time">Availability:</label> -->
+        <legend>Availability:</legend>
+        <input type="radio" name="ft" id="ft"><label for="ft">Full Time</label>
+        <br/>
+        <input type="radio" name="ft" id="pt"><label for="pt">Part Time</label>
+    </fieldset> 
+    <br/>
+    <label for="Comments">Additional Comments:</label>
+    <br/>
+    <br/>
+    <textarea name="Comments" id="Comments" cols="50" rows="10"></textarea>
+    <button>Submit</button>
+</body>
+</html>
