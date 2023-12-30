@@ -1,0 +1,18 @@
+h2{
+    color: brown;
+    background-color:aquamarine;
+}
+
+.class{
+    font-family: cursive;
+    font-size: larger;
+    font-weight: 200px;
+    font-style: italic;
+    /* background-color: blueviolet; */
+    color: 100,180,210;
+}
+#paraone{
+    color: crimson;
+    background-color: beige;
+}
+

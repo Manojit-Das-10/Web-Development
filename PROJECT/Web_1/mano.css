@@ -1,0 +1,20 @@
+h1{
+font-size:larger;
+background-color: chartreuse;
+color: firebrick;
+text-align: center;
+font-style: oblique;
+}
+article{
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+}
+p{
+   background-color:burlywood;
+    color: darkgreen;
+}
+image{
+    height: 200px;
+    width: 160 px;
+}
