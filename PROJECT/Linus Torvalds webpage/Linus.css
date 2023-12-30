@@ -7,3 +7,12 @@ img{
 /* #Linus{
 padding-left: 30px;
 } */
+html{
+    scroll-behavior: smooth;
+}
+
+aside{
+    float: right;
+    width: 20%;
+    background-color:rebeccapurple;
+}
