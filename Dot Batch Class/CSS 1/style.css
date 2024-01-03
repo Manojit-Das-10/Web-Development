@@ -1,0 +1,22 @@
+/* p{
+    text-shadow: 1px 1px 2px pink;
+    background-color: floralwhite;
+} */
+
+.box
+{
+height: 100px;
+width: 200px;
+border: 1px solid black;
+margin: 10px;
+padding: 25px;
+}
+#para{
+    background-color: orange;
+}
+#mar{
+    background-color: white;
+}
+#ga{
+    background-color: green;
+}
