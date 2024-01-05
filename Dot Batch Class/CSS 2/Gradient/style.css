@@ -1,0 +1,31 @@
+.box{
+    border: 1px solid black;
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    /* default direction */
+    /* background-image:linear-gradient(yellow,green);*/
+
+    /* specific direction */
+    /*background-image:linear-gradient(to right,yellow,green); */
+    /* background-image:linear-gradient(to left bottom,yellow,green,blue); */
+
+    /* angel direction */
+    /* background-image:linear-gradient(210deg,yellow,green); */
+
+    /* transperancy */
+    background-image:linear-gradient(to left, rgba(255,150,0,0.9),rgba(0,255,0,0.9));
+
+}
+
+.mydiv{
+    border: 1px solid black;
+    margin: 20px;
+    height: 180px;
+    width: 200px;
+    text-align: center;
+    /* background-image:radial-gradient(circle,red,pink,orange); */
+    background-image: radial-gradient(black 5%, aqua 20%,violet 60%);
+     
+
+}
