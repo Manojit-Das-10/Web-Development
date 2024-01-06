@@ -24,6 +24,7 @@
     height: 180px;
     width: 200px;
     text-align: center;
+    /* Radial Gradient */
     /* background-image:radial-gradient(circle,red,pink,orange); */
     background-image: radial-gradient(black 5%, aqua 20%,violet 60%);
      
