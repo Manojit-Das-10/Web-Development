@@ -1,0 +1,20 @@
+div{
+    height: 50px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 1px solid red;
+}
+
+.static{
+    color: rgb(158, 45, 104);
+}
+.translate{
+    margin: 10px;
+    transform: perspective(20px) translatez(-10px);
+}
+
+.scaled{
+    margin: 20px;
+    /* transform: perspective(500px) scaleZ(8) rotateX(45deg) rotateY(10deg) rotateZ(30deg); */
+    transform: rotateZ(45deg);
+}
