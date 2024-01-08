@@ -30,3 +30,12 @@
      
 
 }
+
+.mano{
+    border: 1px solid black;
+    margin: 20px;
+    height: 150px;
+    width: 220px;
+    text-align: center;
+    background-image:conic-gradient( black 15%,red 50%,green 80%);
+}

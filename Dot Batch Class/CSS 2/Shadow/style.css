@@ -1,6 +1,7 @@
 h1{
     text-shadow: 3px 3px 3px red;
     text-shadow: 3px 3px 3px red, 6px 6px 6px green;
+    
 }
 
 .box{
@@ -10,4 +11,19 @@ h1{
     box-shadow: 10px 10px 10px pink,-10px -10px 30px yellow;
     color: red;
 
+}
+
+.line{
+    border: 1px solid red;
+    margin-top: 50px;
+    margin-left: 20px;
+    height: 100px;
+    width: 200px;
+   text-align: right;
+   text-align: left;
+   /* text-align: right;
+   text-align: right;
+   text-align: right; */
+
+    /* box-shadow: 1px 1px -1px -1px lightblue; */
 }
