@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 1 px solid red;
+    background-color: pink;
+    display:grid;
+    height: 700px;
+    grid-template-columns: repeat(3, 5fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+
+}
+
+.box{
+    border: 1px solid orange;
+    background-color: aquamarine;
+    /* height: 100px;
+    width: 100px; */
+}
+
+#box1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+} 
