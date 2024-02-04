@@ -1,0 +1,45 @@
+.container{
+    margin: 30px;
+    background-color: yellow;
+    border: 1px solid red;
+    height: 210px;
+    width: 100%;
+
+}
+
+.box{
+    height: 99%;
+    width: 100px;
+    background-color: hotpink;
+    border: 3px solid green;
+
+    animation-name: mano;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-direction: alternate ;
+}
+
+/* @keyframes mano {
+    from{
+        width :100px;
+    }
+    to{
+        width: 100%;
+    }
+} */
+@keyframes mano {
+    0%{
+        width: 100px;
+        background-color: orange;
+    }
+    50%{
+        width: 50%;
+        background-color: white;
+    }
+    100%{
+        width: 100%;
+        background-color: green;
+    }
+}
