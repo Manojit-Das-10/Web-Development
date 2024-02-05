@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'); */
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap);
+}
+
 .wrapper{
     height: 100vh;
     overflow-x: hidden;
@@ -21,6 +28,7 @@
     margin: 20px 0;
     margin-bottom: 20px;
     font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .Gallery{
