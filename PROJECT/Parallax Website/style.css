@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 #wrapper{
     height: 100vh;
     overflow-x:hidden;
     overflow-y: auto;
-    perspective: 10px;
+    perspective: 0.625rem;
 }
 
 .container{
@@ -29,16 +30,18 @@
 }
 
 .background{
-    transform:translateZ(-40px) scale(5.1);
+    transform:translateZ(-2.5rem) scale(5.1);
 }
 
 .foreground{
-    transform: translateZ(-10px) scale(2);
+    transform: translateZ(-0.625rem) scale(2);
 }
+
 @font-face{
     font-family: 'Poppins', sans-serif;
     src:url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap")
 }
+
 h1{
     position:absolute;
     top: 5rem;
@@ -46,7 +49,7 @@ h1{
     transform: translateX(-50%);
     text-transform: uppercase;
     font-size: 10rem;
-    letter-spacing: 4px;
+    letter-spacing: 0.25rem;
     color: white;
     text-shadow: 0 0 10px rgba(0,0,0,0.3);
     font-family: 'Poppins', sans-serif;
@@ -73,11 +76,12 @@ section{
 .bg{
     position: relative;
     width: 100%;
-    height: 500px; 
+    height: 31.25rem; 
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
+
 .description{
     position: absolute;
     background-color: white;
@@ -89,7 +93,6 @@ section{
     font-size: 3.5rem;
     font-weight: 600rem;
     font-family: 'Poppins', sans-serif;
-    /* transform: translateY(10%); */
 }
 
 .bg1{
@@ -104,3 +107,23 @@ section{
     background-image: url(sport-3.jpg);
 }
 
+/* Media Query for Mobile View */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+    .secHeading {
+        font-size: 3rem;
+        padding: 0 2rem;
+    }
+    .text {
+        font-size: 1rem;
+        padding: 0 2rem;
+    }
+    .description {
+        font-size: 2rem;
+    }
+    .bg {
+        height: 20rem;
+    }
+}
