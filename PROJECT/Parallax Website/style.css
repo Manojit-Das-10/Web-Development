@@ -110,7 +110,7 @@ section{
 /* Media Query for Mobile View */
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .secHeading {
         font-size: 3rem;
