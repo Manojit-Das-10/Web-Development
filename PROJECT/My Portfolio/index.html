@@ -21,9 +21,9 @@
 
                 <!-- Navbar items -->
                 <div class="Nav-items">
-                    <div><a href=".project">Projects</a></div>                    
-                    <div><a href=".skills">Skills</a></div>
-                    <div><a href=".contact">Contact Me</a></div>
+                    <div><a href="#project">Projects</a></div>                    
+                    <div><a href="#skills">Skills</a></div>
+                    <div><a href="#contactme">Contact Me</a></div>
                 </div>
 
             </div>
@@ -73,8 +73,8 @@
 
         </div>
 
-            <!-- Project section -->
-            <div class="project-section"> 
+        <!-- Project section -->
+        <div class="project-section" id="project"> 
 
                 <h2 class="page-header">Projects</h2>
 
@@ -204,9 +204,9 @@
                     </div>
 
                 </div>
-            </div>
-            <!-- Skill Container -->
-            <div id="skills" class="container skills-container">
+        </div>
+        <!-- Skill Container -->
+        <div id="skills" class="container skills-container">
                 <div class="skill-faded-text">Skills</div>
 
                 <div class="skill-container-left">
@@ -261,7 +261,78 @@
                     <img src="Img/Stack/Kubernets.svg" alt="" class="skills-logo" />
                 </div>
 
+        </div>
+
+        <!-- Contact Me Section -->
+        <div class="contact-me-container" id="contactme">
+
+            <div class="container">
+
+                <h1 class="contact-heading">Contact Me</h1>
+
+                <h3 class="contact-subheading">
+                  Questions, Thoughts, Or Just Want To Say Hello?
+                </h3>
+
+                <div class="form-container">
+
+                  <form action="" class="form">
+                    <div class="formfield-container">
+
+                      <input class="formfield" type="text" name="name" id="name" placeholder="Enter your name">
+
+                      <input class="formfield" type="email" name="email" id="email" placeholder="Enter your email">
+
+                      <input class="formfield" type="text" name="subject" id="subject" placeholder="Enter your subject">
+
+                      <textarea class="formfield textarea" name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+
+                    </div>
+
+                    <div>
+                      <button class="btn-hireme" type="submit" id="submit-btn">
+                        Send message<i class="submit-icon fa-solid fa-paper-plane"></i>                         
+                      </button>
+                    </div>
+
+                  </form>
+  
+                </div>
+
             </div>
+
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+          <div class="container">
+            <div class="footer-wrapper">
+
+              <div class="footer-faded">Manojit Das</div>
+                
+              <div class="link-wrapper">
+                <div>
+                  <a href="#project">Proejcts</a>
+                </div>
+                <div>
+                  <a href="#skills">Skills</a>
+                </div>
+                <div>
+                  <a href="#contactme">Contact Me</a>
+                </div>
+              </div>
+
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-linkedin icon"></i>
+                <i class="fa-brands fa-github icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-instagram icon"></i>
+                <i class="fa-regular fa-envelope icon"></i>
+              </div>
+
+            </div>
+          </div>
+        </footer>
 
     </div>
     <div class="js-script">
