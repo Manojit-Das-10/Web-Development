@@ -8,3 +8,21 @@
     padding-top: 12rem;
     padding-bottom: 12rem;
 }
+
+.companieslist{
+    animation: 20s infinite linear moveimage;
+}
+
+@keyframes moveimage{
+    0%{
+        top: 0;
+    }
+
+    50%{
+        top: -50%;
+    }
+
+    100%{
+        top: -100%;
+    }
+}
