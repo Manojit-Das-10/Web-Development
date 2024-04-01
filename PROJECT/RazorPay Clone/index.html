@@ -17,7 +17,8 @@
     />
 
 </head>
-<body class="overflow-x-hidden">
+<body>
+  <div class="overflow-x-hidden relative w-full">
     <!-- Navbar -->
     <nav class="bg-deepBlue">
         <div class="relative w-[1080px] mx-auto flex items-center justify-between">
@@ -32,7 +33,7 @@
             <ul class="flex space-x-6">
                 <!-- Payments -->
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group">
+                transition-all duration-200 relative group hidden lg:block">
                 <a href="#">Payments</a>
                 
                 <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
@@ -41,7 +42,7 @@
 
                 <!-- Banking -->
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group">
+                transition-all duration-200 relative group hidden lg:block">
                 <a href="#">Banking</a>
                 
                 <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
@@ -50,17 +51,17 @@
 
                 <!-- Corporate card -->
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group">
+                transition-all duration-200 relative group hidden lg:block">
                 <a href="#">Corporate card</a>
                 
                 <!-- Payroll -->
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group">
+                transition-all duration-200 relative group hidden lg:block">
                 <a href="#">Payroll</a>                
 
                 <!-- Resources -->
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group">
+                transition-all duration-200 relative group hidden lg:block">
                 <a href="#">Resources</a>
                 
                 <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
@@ -69,7 +70,7 @@
 
                 <!-- Support -->
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group">
+                transition-all duration-200 relative group hidden lg:block">
                 <a href="#">Support</a>
                 
                 <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
@@ -78,7 +79,7 @@
 
                 <!-- Pricing -->
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                transition-all duration-200 relative group">
+                transition-all duration-200 relative group hidden lg:block">
                 <a href="#">Pricing</a>
                 
                 <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
@@ -90,16 +91,27 @@
             <div class="flex space-x-6 mx-1">
 
                     <img src="./image/india-flag.svg" 
-                    width="28px"
-                    height="20px">
+                      width="28px"
+                      height="20px"
+                      class="hidden lg:block">
 
                     <button class="text-white py-3 px-5 font-mullish border-lightBlue border rounded-sm text-sm font-bold">
                         Log in
                     </button>
 
                     <button class="py-3 px-4 font-mullish rounded-sm text-sm font-bold bg-white text-lightBlue300 border
-                    transition-all duration-200 hover:text-lightBlue500 flex">
-                        Sign Up <i class="fa-sharp fa-regular fa-arrow-right bg-lightBlue500 absolute"></i>
+                        transition-all duration-200 hover:text-lightBlue500 hidden lg:flex">
+                        Sign Up 
+                        <svg
+                          viewBox="0 0 24 24"
+                          focusable="false"
+                          class="w-[14px] h-[14px] ml-3 mt-1"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                          ></path>
+                        </svg>
                     </button>
             </div>
 
@@ -110,7 +122,7 @@
     <section
     class="relative bg-deepBlue ">
         
-    <div class="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto">
+    <div class="w-10/12 max-w-[1080px] flex flex-col lg:flex-row justify-between items-center mx-auto">
         <!-- left part -->
         <div class="space-y-8 ">
             <h1 class="font-mullish font-bold text-[40px] leading-[1.2] text-white">
@@ -190,15 +202,15 @@
                         </li>
                     </ul>
                     <!-- for button and hyperlink -->
-                    <div class="flex flex-row items-center space-x-4">
-                        <button class="bg-lightBlue w-fit text-white py-[14px] px-[18px] rounded-md
-                        font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 flex flex-row relative">
+                    <div class="flex flex-col-reverse md:flex-row items-center space-x-4">
+                        <button class="bg-lightBlue w-full md:w-fit text-white py-[14px] px-[18px] rounded-md
+                          font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 flex flex-row relative ">
                             Sign Up Now
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class=" w-[14px] h-[14px] ml-3 mt-1 fill-white">
                                 <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
                             </svg>
                         </button>
-                        <div class="flex items-center cursor-pointer group">
+                        <div class="flex self-start md:items-center cursor-pointer group">
                             <a href="#"
                             class="font-mullish font-bold text-lightBlue500
                             group-hover:text-grayBlue transition-all duration-200"
@@ -216,7 +228,7 @@
                 <!-- Background Image -->
                 <div>
                     <img src="./image/payment-suite.png" alt=""
-                    class="max-w-[600px] absolute right-0 bottom-0">
+                    class="max-w-[600px] absolute right-0 bottom-0 hidden md:max-w-[400px] md:block lg:max-w-[600px] lg:block">
                 </div>
             </div>
 
@@ -1368,6 +1380,8 @@
         </div>
 
     </section>
+
+  </div>
 
 
    <!-- Footer -->
