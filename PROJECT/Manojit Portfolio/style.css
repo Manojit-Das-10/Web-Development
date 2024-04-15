@@ -767,6 +767,22 @@ a{
     z-index: -4;
 }
 
+/* Style buttons */
+.Download-Btn {
+    background-color: DodgerBlue;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .Download-Btn:hover {
+    background-color: RoyalBlue;
+  }
+
 @keyframes blobAnimate {
     50%{
         top: 18%;
