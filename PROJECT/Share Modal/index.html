@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Share Modal | Manojit</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="Image/pcboi2.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+
+  <div class="wrapper">
+    <div class="card-wrapper">
+      <div>
+        <img src="./Image/Edit.jpg" alt="user" />
+      </div>
+      <div class="user-name">
+        <h2>Manojit Das</h2>
+      </div>
+      <div class="designation">
+        <h3>Student, SETGOI Durgapur</h3>
+      </div>
+      <div class="bottom-group">
+        <button onclick="openModal()" class="btn-share btn-card">
+          <i class="fa-solid fa-share"></i>
+          <div>share my profile</div>
+        </button>
+
+        <a href="https://manojit-das.netlify.app/">
+          <button class="btn-follow btn-card">
+            Follow me
+          </button>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Component -->
+  <div class="modal">
+    <div class="modal-header">
+      <h1>Share My Profile</h1>
+      <div>
+        <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+      </div>
+    </div>
+
+    <div>
+
+      <h3>Share this via</h3>
+      
+      <div class="icon-container">
+        <a href="https://www.linkedin.com/in/manojit-das-10-/" target="_blank" class="icon" id="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Manojit-Das-10" target="_blank"  class="icon" id="github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://twitter.com/Manojit_Das_10" target="_blank" class="icon" id="xtwitter">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/manojit.das.9083" target="_blank"  class="icon" id="facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        
+        <a href="https://www.instagram.com/code_with_manojit/" target="_blank"  class="icon" id="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" onclick="closeModal()"></div>
+
+  <script src="logic.js"></script>
+</body>
+
+</html>
