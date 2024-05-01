@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+  <div class="wrapper">
+
+    <!-- Navbar -->
+    <div>
+      <nav class="flex justify-between py-4 px-20 mt-4">
+          <!-- Logo -->
+          <img src="../images/logoNote.svg" alt="" height="57px" width="154px"
+          class="-mt-14">
+          <!-- Navbar items -->
+          <div class="flex space-x-6">
+            <p class="font-normal leading-7 text-xl">Home</p>
+            <p class="font-normal leading-7 text-xl">Course</p>
+            <p class="font-normal leading-7 text-xl">FAQ</p>
+            <p class="font-normal leading-7 text-xl">Contact Us</p>
+          </div>
+          <!-- Buttons -->
+          <div class="flex space-x-4">
+            <div class="font-black leading-6 text-base text-[#F48C06] underline">Log In</div>
+            <div class="bg-[#F48C06] h-10 w-20 content-center flex justify-center items-center rounded -mt-2">
+              <div class="font-semibold leading-6 text-base text-white">Sign Up</div>
+            </div>
+          </div>
+
+      </nav>
+      <!-- Horizontal line -->
+      <hr class="bg-black h-0.5 w-full -mt-14">
+    </div>
+
+    <!-- Main Content -->
+    <div class="w-9/12 mx-auto flex border rounded-3xl mt-3 scale-90 custom-shadow">
+
+      <!-- Left part -->
+      <div class="-mt-20 flex flex-col">
+        <img src="../images/logoNote.svg" alt="" height="252px" width="486px">
+        <h3 class="flex items-center justify-center flex-col">
+          <span class="font-sans font-extrabold text-4xl leading-10">Welcome</span> <br>
+           <span class="font-sans font-bold text-2xl leading-8">
+            Just a couple of clicks and <br>
+            <span class="flex justify-center">we start</span>
+           </span>
+        </h3>
+        <div class="flex mt-20">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <!-- Right Part -->
+      <div class="bg-gray-100 ">
+
+        <h2 class=" text-[#F48C06] font-bold font-sans text-4xl leading-10 mt-7 flex justify-center">Create Account</h2>
+
+        <div class="mt-7 ">
+
+          <form action="" class="space-y-6">
+
+            <!-- First and last Name -->
+            <div class="flex gap-[19px] ml-7 mr-7 ">
+              <!-- First Name -->
+              <div class="">
+                <label for="fName" class="mb-2  dark:text-gray-400 text-lg">First Name</label>
+                <input
+                  id="fName"
+                  class="border p-3  dark:text-gray-300  dark:border-gray-700 shadow-md placeholder:text-base focus:scale-105 ease-in-out 
+                  duration-300 border-gray-300 rounded-lg w-full"
+                  type="text"
+                  placeholder="John"
+                  required
+                />
+                <!-- <i class="fa fa-user icon"></i> -->
+              </div>
+
+              <!-- Last Name -->
+              <div>
+                <label for="email" class="mb-2  dark:text-gray-400 text-lg">Last Name</label>
+                <input
+                  id="lName"
+                  class="border p-3 dark:text-gray-300  dark:border-gray-700 shadow-md placeholder:text-base focus:scale-105 ease-in-out duration-300 border-gray-300 rounded-lg w-full"
+                  type="text"
+                  placeholder="Doe"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- University Roll Number -->
+            <div class="ml-7 mr-7">
+              <label for="Roll" class="mb-2  dark:text-gray-400 text-lg">University Roll</label>
+              <input
+                id="Roll"
+                class="border p-3  dark:text-gray-300  dark:border-gray-700 shadow-md placeholder:text-base focus:scale-105 ease-in-out 
+                duration-300 border-gray-300 rounded-lg w-full"
+                type="number"
+                placeholder="27800121009"
+                required
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="ml-7 mr-7">
+              <label for="Email" class="mb-2  dark:text-gray-400 text-lg">Email</label>
+              <input
+                id="Email"
+                class="border p-3  dark:text-gray-300  dark:border-gray-700 shadow-md placeholder:text-base focus:scale-105 ease-in-out 
+                duration-300 border-gray-300 rounded-lg w-full"
+                type="email"
+                placeholder="johndoe@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="flex gap-[19px] ml-7 mr-7 ">
+              <!-- Password -->
+              <div class="">
+                <label for="Password" class="mb-2  dark:text-gray-400 text-lg">Password</label>
+                <input
+                  id="Password"
+                  class="border p-3  dark:text-gray-300  dark:border-gray-700 shadow-md placeholder:text-base focus:scale-105 ease-in-out 
+                  duration-300 border-gray-300 rounded-lg w-full"
+                  type="text"
+                  placeholder="***********"
+                  required
+                />
+                <!-- <i class="fa fa-user icon"></i> -->
+              </div>
+
+              <!-- Confirm password -->
+              <div>
+                <label for="Password" class="mb-2  dark:text-gray-400 text-lg">Confirm Password</label>
+                <input
+                  id="password"
+                  class="border p-3 dark:text-gray-300  dark:border-gray-700 shadow-md placeholder:text-base focus:scale-105 ease-in-out duration-300 border-gray-300 rounded-lg w-full"
+                  type="text"
+                  placeholder="***********"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Sign Up button -->
+            <button class="bg-[#F48C06] w-[92%] ml-7 rounded-lg h-14 text-white font-sans font-bold leading-6 text-xl">
+              Sign Up
+            </button>
+
+            <div class=" flex justify-center">
+              <h2>Already a member? <a href="../Log In/index.html" class="font-bold font-sans">LogIn</a></h2>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+   
+  <script src="logic.js"></script>
+</body>
+</html>
