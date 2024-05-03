@@ -18,7 +18,7 @@
             <!-- Input Tag -->
             <input readonly placeholder="Password" class="display" data-passwordDisplay>
 
-            <button>
+            <button data-copy>
                 <span data-copyMsg></span>
                 <img src="./assets/copy.svg" alt="copy" width="23" height="23">
             </button>
@@ -31,8 +31,34 @@
                 </div>
 
                 <!-- Slider -->
-               <input type="range" min="1" max="20" class="Slider" step="1"> 
+               <input type="range" min="1" max="20" class="Slider" step="1" data-lengthSlider> 
 
+               <!-- CheckBoxes and labels -->
+               <div>
+                    <input type="checkbox" name="" id="uppercase">
+                    <label for="uppercase">Includes Uppercase letters</label>
+               </div>
+               <div>
+                    <input type="checkbox" name="" id="lowercase">
+                    <label for="lowercase">Include Lowercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="numbers">
+                    <label for="numbers">Include Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="symbols">
+                    <label for="symbols">Include Symbols</label>
+                </div>
+
+                <!-- Strength Section -->
+                <div class="strength-container">
+                    <p>Strength</p>
+                    <div data-indicator></div>
+                </div>
+
+                <!-- Generate Button -->
+                <button class="generateButton">Generate Password</button>
 
             </div>
 
