@@ -18,7 +18,7 @@ let password = "";
 let passwordLength = 10;
 let checkCount = 0;
 handleSlider();
-//ste strength circle color to grey
+//ste strength circle color to gray
 setIndicator("#ccc");
 
 
