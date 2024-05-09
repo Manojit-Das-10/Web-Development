@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App | Madboy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/Fevicon.png">
 </head>
 <body>
     
@@ -87,14 +88,16 @@
                     </div>
 
                 </div>
-
-
             </div>
 
-
+            <!-- handle api fetch error -->
+            <div class="sub-container api-error-container">
+                <img src="./images/not-found.png" data-notFoundImg />
+                <p data-apiErrorText></p>
+                <button class="btn" data-apiErrorBtn>Retry</button>
+            </div>
 
         </div>
-
 
     </div>
 
