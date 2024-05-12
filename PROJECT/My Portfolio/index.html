@@ -103,15 +103,25 @@
                             </p>
 
                             <div class="btn-grp">
-                                <!-- <button class="btn-hireme btn-project">Read More</button> -->
-                                <div class="btn-hireme btn-project">Read More</div>
-                                <a href="">
-                                    <i title="GitHubLink" class="fa-brands fa-github icon"></i>
-                                </a>
-                                <a href="">
-                                    <i title="Live Link" class="fa-solid fa-link icon"></i>
-                                </a>
+                              <div class="btn-hireme btn-project read-more-btn">Read More</div>
+                              <a href="#">
+                                  <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                              </a>
+                              <a href="#">
+                                  <i title="Live Link" class="fa-solid fa-link icon"></i>
+                              </a>
                             </div>
+                          
+                            <div class="overlay" id="overlay">
+                                <div class="popup">
+                                    <i onclick="closePopup()" class="fa-solid fa-xmark close-btn x-icon"></i>
+                                    <h2 id="subheading">Project Details</h2>
+                                    <p id="details">Details of the project go here...</p>
+                                </div>
+                            </div>
+
+                            <div class="overlay" onclick="closePopup()"></div>
+                          
 
                         </div>
                     </div>
@@ -205,6 +215,7 @@
 
                 </div>
         </div>
+
         <!-- Skill Container -->
         <div id="skills" class="container skills-container">
                 <div class="skill-faded-text">Skills</div>
@@ -354,5 +365,7 @@
     });
   </script>
   </div>
+
+  <script src="logic.js"></script>
 </body>
 </html>
