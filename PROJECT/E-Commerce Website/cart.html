@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaraCart | Madboy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/Fevicon2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+    
+    <!-- Navbar Section-->
+    <section id="header">
+        <a href="#"><img src="./img/logo.png" alt="" class="logo" onclick="window.location.href='index.html';"></a>
+        
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a id="close" href="#"><i class="fa-regular fa-circle-xmark"></i></a>
+            </ul>    
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-outdent"></i>
+        </div>
+        
+    </section>
+
+    <!-- Page Header Section -->
+    <section id="page-header" class="about-header">
+        <h2>#let's_talk</h2>
+        <p>LEAVE A MESSAGE, WE Love to hear from you!</p>
+
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cartt" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- 1 row -->
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="./img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+
+                </tr>
+
+                <!-- 2 row -->
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="./img/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+
+                </tr>
+
+                <!-- 3 row -->
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="./img/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+
+                </tr>
+            </tbody>
+
+
+        </table>
+
+    </section>
+
+    <!-- Cart add section -->
+    <section id="cart-add" class="section-p1">
+        <!-- Left part -->
+        <div id="coupon">
+            <h3>Aplly Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <!-- Right Part -->
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 335</td>
+                </tr>
+
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 335</strong></td>
+                </tr>
+
+            </table>
+            <button class="normal">Proceed to checkout</button>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer id="footer" class="section-p1">
+        <!-- 1st col -->
+        <div class="col">
+            <img class="logo" src="./img/logo.png" alt="" loading="lazy">
+            <h4>Contact</h4>
+            <p>
+               <strong>Address:</strong> 562 Wellington Raod,street 32, San Francisco
+            </p>
+            <p>
+                <strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789
+            </p>
+            <p>
+                <strong>Hours:</strong> 10:00 - 18:00, Mon - Sat
+            </p>
+            <div class="follow">
+                <h4>Follow Up</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 2nd col -->
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Informantion</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+
+        <!-- 3rd col -->
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+
+        </div>
+
+        <!-- 4th COl -->
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="./img/pay/app.jpg" alt="" loading="lazy">
+                <img src="./img/pay/play.jpg" alt="" loading="lazy">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="./img/pay/pay.png" alt="" loading="lazy">
+
+        </div>
+
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> 2024 , Ecommerce Template - Made by <a href="https://manojit-das.netlify.app/">Manojit</a></p>
+        </div>
+
+    </footer>
+
+     
+    <script src="script.js"></script>
+</body>
+</html>
