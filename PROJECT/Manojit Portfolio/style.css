@@ -649,18 +649,18 @@ a{
 }
 
 #project1{
-    background-image: url(Img/Project/Discord.png);
+    background-image: url(Img/Project/CaraCart.png);
 }
 #project2{
     margin-left: 120px;
-    background-image: url(Img/Project/Razorpay.png);
+    background-image: url(Img/Project/Weather\ App.png);
 }
 #project3{
-    background-image: url(Img/Project/Chair\ Product.png);
+    background-image: url(Img/Project/Razorpay.png);
 }
 #project4{
     margin-left: 120px;
-    background-image: url(Img/Project/Parallax.png);
+    background-image: url(Img/Project/Discord.png);
 }
 
 @media (max-width:1300px) {
