@@ -153,7 +153,7 @@ function renderWeatherInfo(weatherInfo) {
     humidity.innerText = `${weatherInfo?.main?.humidity}%`;
     cloudiness.innerText = `${weatherInfo?.clouds?.all}%`;
 
-
+  
 }
 
 // - - - - - - - - - - - -Search Weather Handling- - - - - - - - - - - -
