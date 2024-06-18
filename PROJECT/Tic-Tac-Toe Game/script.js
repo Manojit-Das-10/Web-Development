@@ -35,6 +35,7 @@ function initGame(){
 
 initGame();
 
+// Turn Swap Function
 function swapTurn(){
     if(currentPlayer === "X"){
         currentPlayer = "O";
@@ -46,6 +47,7 @@ function swapTurn(){
     gameInfo.innerText = `Current Player - ${currentPlayer}`;
 }
 
+// Game Over Check function
 function checkGameOver(){
     // Too do
     let answer = "";
