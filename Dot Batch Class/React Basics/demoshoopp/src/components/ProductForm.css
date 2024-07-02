@@ -23,4 +23,5 @@
   
   .new-product_button {
     text-align: right;
+    transform: translateY(-25px);
   }

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import './ProductForm'
-
+import './ProductForm.css'
+ 
 function ProductForm(props) {
 
     const [newTitle, setTitle] = useState('');
@@ -12,8 +12,9 @@ function ProductForm(props) {
     }
     function dateChangeHandler(event) {
         setDate(event.target.value);
+        console.log(newTitle);
+        console.log(newDate);
     }
-
 
     function submitHandler(event) {
         event.preventDefault();
@@ -38,7 +39,7 @@ function ProductForm(props) {
         </div>
         <div className='new-product_control'>
             <label>Date</label>
-            <input type='date' value={newDate} onChange={dateChangeHandler} min='2023-01-01' max='2023-12-12'></input>
+            <input type='date' value={newDate} onChange={dateChangeHandler} min='2024-01-01' max='2024 -12-12'></input>
         </div>
         <div className='new-product_button'>
             <button type='submit'>Add Product</button>
