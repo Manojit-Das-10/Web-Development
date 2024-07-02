@@ -25,9 +25,9 @@ function ProductForm(props) {
         };
 
         //console.log(productData);
-        props.onSaveProduct(productData);
+        props.onSaveProduct(productData); 
 
-        setTitle('');
+        setTitle(''); 
         setDate('');
     }
 
