@@ -1,14 +1,15 @@
+import Card from "./Card";
 
-function Tours({tours}){
+function Tours({tours,removeTour}){
     return(
-        <div>
-            <div>
+        <div className="container">
+            <div className="title">
                 <h2>Plan with Momi</h2>
             </div>
-            <div>
+            <div className="cards">
                 {
                     tours.map( (tour) => {
-                        return <card></card>
+                        return <Card key={tour.id} {...tour} removeTour={removeTour}></Card>
                     } )
                 }
             </div>      
