@@ -1,23 +1,47 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const[text,setText] = useState('');
+  const[name,setName] = useState('mano');
+
+  // Variation 1 -> Every Render
+  // useEffect( () =>{
+  //   console.log('UI Rendering Done');
+  // });
+
+  // Variation 2 -> First Render
+  // useEffect( () => {
+  //   console.log('UI Rendering Done');
+  // },[]);
+
+  // Variation 3 -> First Render + whenever dependency changes
+  // useEffect( () => {
+  //   console.log('Change Observed');
+  // },[name]);
+
+  // Variation 4 -> To handle unmounting of a component
+  useEffect( () => {
+    // add event listener
+    console.log('Listener added');
+
+    // remove event listener
+    return () => {
+      console.log('Listener removed');
+    }
+     
+  },[text]);
+
+
+  function changeHandler(event){
+    setText(event.target.value);
+    console.log(text);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <input type="text" onChange={changeHandler}></input>
     </div>
   );
 }
