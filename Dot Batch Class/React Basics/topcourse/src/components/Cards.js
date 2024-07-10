@@ -1,7 +1,11 @@
 import React from 'react';
 import Card from './Card';
 
-const Cards = ({courses}) => {
+const Cards = (props) => {
+
+  let courses = props.courses;
+  console.log('Printing data');
+  console.log(courses);
 
   let allcourses = [];
   // It returns a list of all courses recived from the api response
