@@ -1,29 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './Card';
 
 const Cards = (props) => {
 
   let courses = props.courses;
-  console.log('Printing data');
-  console.log(courses);
+  let category = props.category;
 
-  let allcourses = [];
+  const [likedCourses,setLikedCourses] = useState([]);
+
   // It returns a list of all courses recived from the api response
-  const getCourses = () => {
-    Object.values(courses).forEach((courseCategory) => {
-        courseCategory.forEach((course) =>{
-            allcourses.push(course);
+  function getCourses()  {
+    if(category === "All"){
+      let allcourses = [];
+      Object.values(courses).forEach(array => {
+        array.forEach(courseData => {
+            allcourses.push(courseData);
         })
-    });
-    return allcourses;
+      })
+      return allcourses;
+    }
+    else{
+      // Pass specific catergory data
+      return courses[category];
+    }
+    
   }
 
   return (
-    <div>
+    <div className='flex flex-wrap justify-center gap-4 mb-4'>
         {
-          getCourses().map( (course) => {
-            return <Card key={course.id} course={course}/>
-          })
+          getCourses().map( (course) => (
+            <Card key={course.id}
+             course={course}
+             likedCourses={likedCourses}
+             setLikedCourses={setLikedCourses}
+            />
+          ))
         }
     </div>
   );
