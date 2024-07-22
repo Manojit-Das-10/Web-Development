@@ -9,14 +9,14 @@ const Navbar = (props) => {
   let setIsLoggedIn = props.setIsLoggedIn;
 
   return (
-    <div className='flex justify-evenly'>
+    <div className='flex justify-between items-center w-11/12 max-w-[1160px] py-4 mx-auto'>
 
       <Link to="/">
         <img src={logo} alt='Logo' width={160} height={32} loading='lazy'></img>
       </Link>
 
       <nav>
-        <ul className='flex gap-3'>
+        <ul className='flex gap-x-6 text-white text-[18px]'>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -31,19 +31,19 @@ const Navbar = (props) => {
 
       {/* Login - SignUp - LogOut - Dashboard */}
 
-      <div className='flex ml-5 mr-3 gap-3'>
+      <div className='flex items-center gap-x-4'>
         { !isLoggedIn &&
           <Link to="/login">
-            <button>
-              Login
+            <button className='bg-[#061b2d] text-white opacity-90 py-[8px] px-[12px] rounded-[8px] border border-[#031524]'>
+              Log in
             </button>
           </Link>
         }
 
         { !isLoggedIn &&
           <Link to="/signup">
-            <button>
-              Sign Up
+            <button className='bg-[#061b2d] text-white opacity-90 py-[8px] px-[12px] rounded-[8px] border border-[#031524]'>
+              Sign up
             </button>
           </Link>
         }
@@ -53,7 +53,7 @@ const Navbar = (props) => {
             <button onClick={()=>{
               setIsLoggedIn(false);
               toast.success("Logged Out");
-            }}>
+            }} className='bg-[#061b2d] text-white opacity-90 py-[8px] px-[12px] rounded-[8px] border border-[#031524]'>
               Log Out
             </button>
           </Link>
@@ -61,7 +61,7 @@ const Navbar = (props) => {
 
         { isLoggedIn &&
           <Link to="/dashboard">
-            <button>
+            <button className='bg-[#061b2d] text-white opacity-90 py-[8px] px-[12px] rounded-[8px] border border-[#031524]'>
               Dashboard
             </button>
           </Link>
