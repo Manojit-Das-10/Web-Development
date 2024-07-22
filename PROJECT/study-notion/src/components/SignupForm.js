@@ -18,6 +18,8 @@ const SignupForm = ({setIsLoggedIn}) => {
     })
 
     const [showPassword,setShowPassword] = useState(false);
+
+    const [accountType,setAccountType] = useState('student');
     
     const [showConfirmPassword,setShowConfirmPassword] = useState(false);
 
@@ -42,21 +44,39 @@ const SignupForm = ({setIsLoggedIn}) => {
         const accountData ={
             ...formData
         };
+
+        const finalData = {
+            ...accountData,
+            accountType
+        }
+
         console.log('Printing account data');
-        console.log(accountData);
+        console.log(finalData);
         navigate('/dashboard');
     }
 
 
   return (
-    <div>
+    <div className=''>
         {/* Student-Instructor tab */}
-        <div>
-            <button>
+        <div className='flex bg-[#081a29] p-1 gap-x-1 my-6 rounded-full max-w-max'>
+            <button 
+            className={` ${accountType === 'student' ?
+                'bg-[#05121c] text-white' :
+                'bg-transparent text-white opacity-80'} py-2 px-5 rounded-full transition-all duration-200`}
+            onClick={ () => {
+                setAccountType('student')
+            }}>
                 Student
             </button>
 
-            <button>
+            <button
+            className={` ${accountType === 'instructor' ?
+                'bg-[#05121c] text-white' :
+                'bg-transparent text-white opacity-80'} py-2 px-5 rounded-full transition-all duration-200`}
+            onClick={ () => {
+                setAccountType('instructor')
+            }}>
                 Instructor
             </button>
 
@@ -65,10 +85,10 @@ const SignupForm = ({setIsLoggedIn}) => {
         <form onSubmit={submitHandler}>
 
             {/* Contain First & Last name */}
-            <div>
+            <div className='flex justify-between mt-5'>
                 <label>
-                    <p>
-                        First Name <sup>*</sup>
+                    <p className='text-[0.875rem] text-white mb-1 leading-[1.375rem]'>
+                        First Name <sup className='text-red-600'>*</sup>
                     </p>
                     <input 
                         required
@@ -77,12 +97,14 @@ const SignupForm = ({setIsLoggedIn}) => {
                         onChange={changeHandler}
                         placeholder='Enter First Name'
                         value={formData.firstName}
+                        className='bg-[#081a29] rounded-[0.5rem] text-[#eeecec] w-full p-[12px] 
+                        border-b-[1px] border-[#a8cdf7]'
                     ></input>
                 </label>
 
                 <label>
-                    <p>
-                        Last Name <sup>*</sup>
+                    <p className='text-[0.875rem] text-white mb-1 leading-[1.375rem]'>
+                        Last Name <sup className='text-red-600'>*</sup>
                     </p>
                     <input 
                         required
@@ -91,33 +113,39 @@ const SignupForm = ({setIsLoggedIn}) => {
                         onChange={changeHandler}
                         placeholder='Enter Last Name'
                         value={formData.lastName}
+                        className='bg-[#081a29] rounded-[0.5rem] text-[#eeecec] w-full p-[12px] 
+                        border-b-[1px] border-[#a8cdf7]'
                     ></input>
                 </label>
 
             </div>
             
             {/* Email Address */}
-            <label>
-                    <p>
-                        Email Address <sup>*</sup>
-                    </p>
-                    <input 
-                        required
-                        type='email'
-                        name='email'
-                        onChange={changeHandler}
-                        placeholder='Enter Email Address'
-                        value={formData.email}
-                    ></input>
-            </label>
+            <div className='mt-5'>   
+                <label className='w-full mt-4'>
+                        <p className='text-[0.875rem] text-white mb-1 leading-[1.375rem]'>
+                            Email Address <sup className='text-red-600'>*</sup>
+                        </p>
+                        <input 
+                            required
+                            type='email'
+                            name='email'
+                            onChange={changeHandler}
+                            placeholder='Enter Email Address'
+                            value={formData.email}
+                            className='bg-[#081a29] rounded-[0.5rem] text-[#eeecec] w-full p-[12px] 
+                            border-b-[1px] border-[#a8cdf7]'
+                        ></input>
+                </label>
+            </div>
 
             {/* Password and confirm password */}
 
-            <div>
+            <div className='flex justify-between mt-5'>
 
-                <label>
-                <p>
-                    Create Password<sup>*</sup>
+                <label className='relative'>
+                <p className='text-[0.875rem] text-white mb-1 leading-[1.375rem]'>
+                    Create Password<sup className='text-red-600'>*</sup>
                 </p>
                 <input 
                     required
@@ -126,19 +154,23 @@ const SignupForm = ({setIsLoggedIn}) => {
                     onChange={changeHandler}
                     placeholder='Enter Password'
                     name='password'
+                    className='bg-[#081a29] rounded-[0.5rem] text-[#eeecec] w-full p-[12px] 
+                    border-b-[1px] border-[#a8cdf7]'
                 >
                 </input>
 
-                <span onClick={ () =>
+                <span className='absolute right-3 top-[38px] cursor-pointer'
+                onClick={ () =>
                     setShowPassword( (prev) => !prev)}>
-                    {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
+                    {showPassword ? <AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF'/> : 
+                    <AiOutlineEye fontSize={24} fill='#AFB2BF'/>}
                 </span>
                 </label>
 
 
-                <label>
-                    <p>
-                       Confirm Password<sup>*</sup>
+                <label className='relative'>
+                    <p className='text-[0.875rem] text-white mb-1 leading-[1.375rem]'>
+                       Confirm Password<sup className='text-red-600'>*</sup>
                     </p>
                     <input 
                         required
@@ -147,26 +179,26 @@ const SignupForm = ({setIsLoggedIn}) => {
                         onChange={changeHandler}
                         placeholder='Confirm Password'
                         name='confirmPassword'
+                        className='bg-[#081a29] rounded-[0.5rem] text-[#eeecec] w-full p-[12px] 
+                        border-b-[1px] border-[#a8cdf7]'
                     >
                     </input>
 
-                    <span onClick={ () =>
+                    <span className='absolute right-3 top-[38px] cursor-pointer'
+                    onClick={ () =>
                         setShowConfirmPassword( (prev) => !prev)}>
-                        {showConfirmPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
+                        {showConfirmPassword ? <AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF'/> :
+                         <AiOutlineEye fontSize={24} fill='#AFB2BF'/>}
                     </span>
                 </label>
 
             </div>
 
-            <button>
+            <button className='w-full bg-yellow-400 rounded-[8px] font-medium text-[#0b1f2f] px-[12] py-[8px] mt-10'>
                 Create Account
             </button>
 
-
-
-
         </form>
-
 
 
     </div>
