@@ -1,4 +1,7 @@
+import { link } from "fs";
+
 export const navItems = [
+  { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
@@ -49,7 +52,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building frontend of a Ed-Tech",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -205,13 +208,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/Manojit-Das-10",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://twitter.com/Manojit_Das_10",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/manojit-das-10-/",
   },
 ];
