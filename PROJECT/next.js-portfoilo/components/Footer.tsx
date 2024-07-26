@@ -37,7 +37,7 @@ const Footer = () => {
           Copyright © 2024 Manojit Das
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 gap-6 max-sm:mt-4">
           {socialMedia.map((info) => (
             <div
               key={info.id}

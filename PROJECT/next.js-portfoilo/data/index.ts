@@ -2,7 +2,7 @@ import { link } from "fs";
 
 export const navItems = [
   { name: "Home", link: "#home" },
-  { name: "About", link: "#about" },
+  // { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
@@ -52,7 +52,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building frontend of a Ed-Tech",
+    title: "Currently crafting the frontend for an innovative Ed-Tech platform.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -83,27 +83,33 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
-  },
-  {
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
-  },
-  {
-    id: 4,
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/Java Script.svg",
+      "/three.svg",
+      "/gsap.svg",
+    ],
+    link: "https://manojit-das-iphone-ui.netlify.app/",
+  },
+  {
+    id: 3,
+    title: "CaraCart - An Ecommerce Website",
+    des: "Developed an e-commerce frontend with responsive design, intuitive navigation, and secure checkout.",
+    img: "/caracart.png",
+    iconLists: ["/HTML.png", "/tail.svg", "/CSS.png", "/Java Script.svg"],
+    link: "https://caracart-manojit-das.netlify.app/",
+  },
+  {
+    id: 4,
+    title: "Tic-Tac-Toe Game",
+    des: "Created an interactive Tic-Tac-Toe game with a smooth UI and real-time gameplay.",
+    img: "/ttt.png",
+    iconLists: ["/HTML.png", "/tail.svg", "/CSS.png", "/Java Script.svg"],
+    link: "https://manojit-tic-tac-toe.netlify.app/",
   },
 ];
 
@@ -143,33 +149,38 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "LeetCode",
+    img: "/leetcode.svg",
+    // nameImg: "/cloudName.svg",
+    link: "https://leetcode.com/madboy_10/",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "GeeksforGeeks",
+    img: "/geeksforgeeks.svg",
+    // nameImg: "/appName.svg",
+    link: "https://auth.geeksforgeeks.org/user/madboy_10",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    name: "Linkedin",
+    img: "/linkedin.png",
+    // nameImg: "/hostName.svg",
+    link: "https://www.linkedin.com/in/manojit-das-10-/",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    name: "Youtube",
+    img: "/youtube.svg",
+    // nameImg: "/streamName.svg",
+    link: "https://youtube.com/@Code_with_Manojit?si=iWwBN2INuNMOAPnd",
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    // nameImg: "/dockerName.svg",
+    name: "Medium",
+    img: "/medium-logo.png",
+    link: "https://medium.com/@manojitdas180306",
   },
 ];
 
@@ -183,15 +194,15 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Open Source Contributor",
+    desc: "Reimagined and enhanced the functionality of websites through innovative design and development.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Campus Ambassador",
+    desc: "Represented the college at various events and activities as a Campus Ambassador.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
