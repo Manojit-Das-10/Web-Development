@@ -11,12 +11,20 @@ export default function AppContextProvider({children}){
     const [page , setPage] = useState(1);
     const [totalPages , setTotalPages] = useState(null);
 
-    // Data Filling
+    // Data Filling & Fetch Call
 
-    async function fetchBlogPosts(page = 1){
+    async function fetchBlogPosts(page = 1 , tag=null , category){
         setLoading(true);
 
-        let url = `${baseUrl}?page=${page}`;
+        let url = `${baseUrl}get-blogs?page=${page}`;
+
+        if(tag){
+            url += `&tag=${tag}`;
+        }
+
+        if(category){
+            url += `&category=${category}`;
+        }
 
         try{
             const result = await fetch(url);
