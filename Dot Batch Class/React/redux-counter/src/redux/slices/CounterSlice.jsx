@@ -19,3 +19,5 @@ export const CounterSlice = createSlice({
 
 export const {increment,decrement} = CounterSlice.actions;
 export default CounterSlice.reducers;
+
+// Redux
