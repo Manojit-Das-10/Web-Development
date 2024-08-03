@@ -83,3 +83,6 @@ const RecentProjects = () => {
 };
 
 export default RecentProjects;
+
+
+// Next.js 2
