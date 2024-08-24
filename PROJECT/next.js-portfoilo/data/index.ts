@@ -4,7 +4,7 @@ export const navItems = [
   { name: "Home", link: "#home" },
   // { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Skills", link: "#skills" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -75,14 +75,6 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
-  },
-  {
-    id: 2,
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
@@ -96,7 +88,7 @@ export const projects = [
     link: "https://manojit-das-iphone-ui.netlify.app/",
   },
   {
-    id: 3,
+    id: 2,
     title: "CaraCart - An Ecommerce Website",
     des: "Developed an e-commerce frontend with responsive design, intuitive navigation, and secure checkout.",
     img: "/caracart.png",
@@ -104,45 +96,50 @@ export const projects = [
     link: "https://caracart-manojit-das.netlify.app/",
   },
   {
-    id: 4,
+    id: 3,
     title: "Tic-Tac-Toe Game",
     des: "Created an interactive Tic-Tac-Toe game with a smooth UI and real-time gameplay.",
     img: "/ttt.png",
     iconLists: ["/HTML.png", "/tail.svg", "/CSS.png", "/Java Script.svg"],
     link: "https://manojit-tic-tac-toe.netlify.app/",
   },
+  {
+    id: 4,
+    title: "Discord UI- clone",
+    des: "Create a Discord UI clone by replicating its layout, styling, and interactive features.",
+    img: "discord.png",
+    iconLists: ["HTML.png", "/tail.svg", "/CSS.png", "/Java Script.svg"],
+    link: "https://manojit-discord-clone.netlify.app/",
+  },
 ];
 
-export const testimonials = [
+export const skills = [
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    name: "Programming Language",
+    images: ["C_logo.png", "cpp_logo.png", "Java Script.svg"],
+  },
+
+  {
+    name: "Frontend Development",
+    images: [
+      "HTML.png",
+      "CSS.png",
+      "tail.svg",
+      "three.svg",
+      "re.svg",
+      "next.svg",
+      "gsap.svg",
+      "Chart.js.svg"
+    ],
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    name: "Backend Developmnet",
+    images: ["Node.js.svg", "Express.png", "Mongodb.svg"],
   },
+  
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    name: "Others",
+    images: ["figma logo.png", "git.svg"],
   },
 ];
 
