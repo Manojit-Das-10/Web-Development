@@ -20,7 +20,7 @@ const Clients = () => {
           <InfiniteMovingCards
             items={skills}
             direction="right"
-            speed="slow"
+            speed="normal"
           />
         </div>
 
@@ -28,7 +28,7 @@ const Clients = () => {
           {companies.map((company) => (
             <React.Fragment key={company.id}>
               <a href={company.link}>
-                <div className="flex md:max-w-60 max-w-32 gap-2 ">
+                <div className="flex md:max-w-60 max-w-32 gap-2">
                   <img
                     src={company.img}
                     alt={company.name}
