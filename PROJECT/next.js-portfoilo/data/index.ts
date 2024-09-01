@@ -139,7 +139,7 @@ export const skills = [
   
   {
     name: "Others",
-    images: ["figma logo.png", "git.svg"],
+    images: ["figma logo.png", "git.svg",'postman.png'],
   },
 ];
 
