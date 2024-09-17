@@ -5,9 +5,10 @@ const CategorySelection = ({ activeCategory, selectedCategory, onSelectCategory 
   // 'Health','Fintech','Enterprise','Growth','Work','Gadgets',
 
   return (
-    <div className='px-4 mb-8 lg:space-x-16 flex flex-wrap items-center border-b-2 py-5 text-gray-900 font-semibold'>
+    <div className='px-4 mb-8 lg:space-x-16 flex flex-wrap max-sm:justify-center items-center border-b-2 py-5 text-gray-900 font-semibold'>
       <button onClick={() => onSelectCategory(null)}
-        className={`lg:ml-12 ${activeCategory ? "" : "active-button"}`}>All
+        className={`lg:ml-12 mr-3 ${activeCategory ? "" : "active-button"}`}>
+          All
         </button>
       {
         categories.map((category) => (
