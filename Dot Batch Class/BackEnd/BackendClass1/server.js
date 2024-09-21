@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 // Specifically parse json data & add it to the request.body object
 app.use(bodyParser.json());
 
-// Activate the sever on 3000 port
+// Activate the server on 3000 port
 app.listen(3000, () => {
     console.log('Server Started at port no. 3000');
 })
