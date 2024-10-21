@@ -5,14 +5,14 @@ const Todo = require("../models/Todo");
 
 exports.getTodo = async (req,res) => {
     try{
-        // Fetch all database
+        // Fetch all data's from database
         const todos = await Todo.find({});
-
+ 
         // Response
         res.status(200).json(
             {
                 success:true,
-                data:todos,
+                data:todos, 
                 message:'Entry Todo Data is fetched',
             }
         );
