@@ -30,10 +30,7 @@ app.post('/api/cars', (request,response) => {
 // Connection between server and database
 
 const mongoose = require ('mongoose');
-mongoose.connect('mongodb://localhost:27017/myDataBase',{
-    useNewUrlParser:true,
-    useUnifiedTopology:true
-})
+mongoose.connect('mongodb://localhost:27017/myDataBase')
 .then( () => {
     console.log('Connection Successfull');
 })
